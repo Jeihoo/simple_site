@@ -4,27 +4,291 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>Juho TiainenCV</title>
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    html {
+        position: relative;
+        min-width: 700px;
+        max-width: 1024px ;
+        height: 100%;
+        display: table;
+        margin: auto;
+        background-image: url("cenary.jpg") ;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    *, body, footer{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background-color: transparent;
+        display: table-cell;
+        vertical-align: middle;
+        height:100%;
+    }
+
+    p {
+        font-size:13px;
+    }
+
+    ul {
+        list-style: none;
+        font-size: 14px;
+    }
+
+    main {
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 35% 1fr;
+        grid-gap: 1rem;
+        filter: drop-shadow(0 0 0.5rem black);
+    }
+
+    .left{
+        background-color: rgb(28, 28, 28);
+        color:#fff;
+    }
+    .left h3{
+        margin-bottom: 0.5rem;
+        color: #707e5d;
+    }
+
+    .left p{
+        margin-top: 1rem;
+    }
+            
+    .left-image {
+        position: relative;
+    }
+
+    .left-image img {
+        width: 100%;
+        
+    }
+
+    .left-image h2 {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        text-shadow: -2px -2px 5px black;
+    }
+
+    .personal, .languages, .skills, .recommentations {
+    padding: 1rem;
+    line-height: 1.5rem;
+    }
+
+    progress {
+        background-color: rgb(28, 28, 28);
+    }
+
+    progress::-webkit-progress-value {
+    background: #707e5d;
+    border-radius:50px; 
+    -moz-border-radius: 50px;
+    }
+
+    progress::-webkit-progress-bar {
+    background:white;
+    border-radius:50px; 
+    -moz-border-radius: 50px;
+    }
+
+    .right{
+        background-color: white;
+        padding: 1.5rem;
+    }
+
+    .right h1 {
+        background-color: #707e5d;
+        color: #fff;
+        padding: 0.4rem;
+        border-radius: 3px;
+
+    }
+
+    .experience, .education, .about_me {
+        line-height: 1.5rem;
+    }
+
+    .experience ul, .education ul{
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .about_me p {
+        margin-top: 1.5rem;
+    }
+
+    #years{
+        float: right;
+    }
+    #grey{
+        color:rgb(158, 158, 158)
+    }
+    #comment{
+    color:  #707e5d;
+    }
+    #muuttuja{
+    color: rgb(82, 169, 224);
+    }
+    #text{
+    color: orange;
+    }
+    #if-else{
+    color:blueviolet;
+    }
+
+    footer {
+        background-color: rgb(28, 28, 28);
+        padding: 2rem;
+        text-align: center;
+        line-height: 1.5rem;
+        color:#fff;
+        margin: 1rem;
+        filter: drop-shadow(0 0 0.5rem black);
+    }
+
+    i {
+        padding: 7px;
+    }
+
+    a {
+    color:white;
+    }
+    a:hover {
+        color:#707e5d;
+    }
+
+    </style>
 </head>
 <body>
-    <h1>Juho Tiainen</h1>
-    <p>A student, was a Graphic Designer but now studying to be a sofware developer of some sort.</p>
-    <p><img src="./media/Juho_Tiainen_CV_Kuva.jpg" width="200" alt="an Image of me"></p>
+    <main>
+        <section class="left">
+            <div class="left-image">
+                <img src="./media/Juho_Tiainen_CV_Kuva.jpg" width="250" alt="Picture of me">
+                <h2>Juho Tiainen</h2>
+            </div>
+            <div class="personal">
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i>    tiainenjuho@gmail.com</li>
+                    <li><i class="fa-solid fa-phone"></i>    +358 45 1711995</li>
+                    <li><i class="fa-solid fa-house"></i>    Tampere</li>
+                    <li><i class="fa-solid fa-car"></i>    B</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h3>TAIDOT</h3>
+                <ul>
+                    <li><p>C++</p> <progress max="100" value="40"></progress></li>
+                    <li><p>HTML ja CSS</p><progress max="100" value="70"></progress></li>
+                    <li><p>Adobe</p><progress max="100" value="90"></progress></li>
+                    <li><p>Microsoft</p><progress max="100" value="70"></progress></li>
+                </ul>
+            </div>
+            <div class="languages">
+                <h3>KIELET</h3>
+                <ul>
+                    <li><p>Suomi</p><progress max="100" value="100"></progress></li>
+                    <li><p>Englanti</p><progress max="100" value="90"></progress></li>
+                </ul>
+            </div>
 
 
-<p>Programming laguages I have worked with:</p>
-<ul>
-    <li>C++</li>
-    <li>Html and css</li>
-</ul>
-<p>Stuff I like:</p>
-<ul>
-    <li>Friends</li>
-    <li>Solving problems</li>
-    <li>I love food</li>
-</ul>
 
-<p>Check out my <a href="https://www.linkedin.com/in/juho-tiainen-482796162/"> Linkedin</a> for more information</p>
+            <div class="recommentations">
+                <h3>SUOSITUKSET</h3>
+                <p>Riina Mikkonen<br>
+                    <span id="grey">Tampere Film Festival, Toiminnanjohtaja</span><br>
+                    +358 40 5322912,<br>
+                    riina.mikkonen@tff.fi</p>
+                <p>Laura Laaksonen<br>
+                   <span id="grey">Espoo Ciné, Toiminnanjohtaja</span><br>
+                    +358 50 3486132,<br>
+                    laura.laaksonen@espoocine.fi</p>
+                 <p>Nelly Liikala<br>
+                    <span id="grey">"Hanko Sushi, Ravitolapäällikkö</span><br>
+                    +358 50 5273556,<br>
+                    nelly.liikala@hankosushi.fi</p>
+                
+            </div>
 
+        </section>
+        <section class="right">
+            <div class="education">
+
+                <h1>KOULUTUS</h1>
+                <ul>
+                    <li>Tietotekniikan insinööri <span id="years">2022 - Kuluva</span></li>
+                    <LI><span id="grey">Tampereen ammattikorkeakoulu</span></li>
+                </ul>
+                <ul>
+                    <li>Media-alan julkaisutuotannon perustutkinto<span id="years">2017 - 2020</span></li>
+                    <LI><span id="grey">Tampereen seudun ammatti- ja aikuisopisto</span></li>
+                </ul>
+
+            </div>
+            <div class="experience">
+
+                <h1>TYÖKOKEMUS</h1>
+                <ul>
+                    <li>Graafikko <span id="years">2018 - Kuluva</span></li>
+                    <LI><span id="grey">Tampere Film Festival / Espoo Ciné</span></li>
+                    <li>Ison projektin hallintaa, aikataulutusta ja yhteistyötä</li>
+                </ul>
+                <ul>
+                    <li>Ravintola työntekijä <span id="years">2014 - 2021</span></li>
+                    <LI><span id="grey">Teboil, Houkutus kahvila, Hanko Sushi, Maranga</span></li>
+                    <li> Hektisyyttä, asiakaspalvelua ja tarmokkuutta</li>
+                </ul>
+
+            </div>
+            <div class="about_me">
+
+                <h1>MINUSTA</h1>
+                <p id="comment">// CV for job hunting</p>
+                <p><span id="muuttuja">CV</span> = Yhteistyökykyinen ison perheen kasvatti kävi kokeilemassa
+                    muutamaa persoonaansa sopivaa alaa ottamatta huomioon kaikkein
+                    tärkeintä.</p>
+                <p>Sosiaaliset taidot omaavana, loistavaksi asiakaspalvelijaksi hän muuttui.
+                    Asiakkaat piti ystävinä ja työkaverit ammattitaitajana. Siitä hänelle jäi
+                    energiat vähiin, työn ulkopuolisiin kanssakäymisiin.</p>
+                <p>Visuaalisuuden ja loogisuuden keskitaivaltajana vain puolikasta käytti hän
+                    opinnoissaan, myöhemmin työssään. Loogisuutta hän kaipaili, haasteita
+                    hän hamuili ja siitä hän ei enää luopuisi. Insinööriksi hän haki ja vuosien
+                    kokemusten takaa tiesi, tämä on se miltä tulevaisuutesi näyttäisi.
+                    Onnellisena hän haasteiden kanssa tappeli ja tiesi ettei tylsistyisi. Tätä hän
+                    janosi, jotta elämä hymyilisi. Nyt kaksi puolikasta hän voisi yhdistää
+                    tulevissa työtehtävissään, jättää tuhannet asiakaskohtaamiset yksittäisiin
+                    ja hyvässä jengissä nauttia ongelmanratkonnasta ja sen antamista
+                    haasteista.</p>
+                <p><span id="if-else">if</span> (<span id="muuttuja">CV</span> != bad) { <br>
+                    cout << <span id="text">"I'd like an interview with you to know more."</span>;<br>
+                    }<br>
+                    <span id="if-else">else</span> {<br>
+                    cout << <span id="text">"Good effort!"</span>;<br>
+                    }}</p> 
+            </div>
+        </section>
+            
+    </main>
+    <footer>
+        <p>Kurkkaa somessa</p>
+        <a href="https://www.linkedin.com/in/juho-tiainen-482796162/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        <a href="https://www.instagram.com/jeihoo/"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="https://www.facebook.com/juho.tiainen.9"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+
+    </footer>
+    
+    
 </body>
 </html>
