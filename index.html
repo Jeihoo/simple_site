@@ -116,7 +116,7 @@
 
     }
 
-    .experience, .education, .about_me {
+    .experience, .education, .about_me, .volunteer{
         line-height: 1.5rem;
     }
 
@@ -129,23 +129,20 @@
         margin-top: 1.5rem;
     }
 
+    .box {
+        float: left;
+        height: 10px;
+        width: 10px;
+        margin-bottom: 15px;
+        clear: both;
+        background-color: #707e5d;
+        }
+
     #years{
         float: right;
     }
     #grey{
         color:rgb(158, 158, 158)
-    }
-    #comment{
-    color:  #707e5d;
-    }
-    #muuttuja{
-    color: rgb(82, 169, 224);
-    }
-    #text{
-    color: orange;
-    }
-    #if-else{
-    color:blueviolet;
     }
 
     footer {
@@ -206,6 +203,14 @@
                 </ul>
             </div>
 
+            <div class="languages">
+                <h3>HARRASTUKSET JA KIINNOSTUKSET</h3>
+                <ul>
+                    <li><p>Suomi (äidinkieli)</p><progress max="100" value="100"></progress></li>
+                    <li><p>Englanti</p><progress max="100" value="90"></progress></li>
+                </ul>
+            </div>
+
 
 
             <div class="recommentations">
@@ -244,37 +249,44 @@
                     <li>Ison projektin hallintaa, aikataulutusta ja yhteistyötä</li>
                 </ul>
                 <ul>
-                    <li>Ravintola työntekijä <span id="years">2014 - 2021</span></li>
+                    <li>Ravintola työntekijä <span id="years">2014 - Kuluva</span></li>
                     <LI><span id="grey">Teboil, Houkutus kahvila, Hanko Sushi, Maranga</span></li>
                     <li> Hektisyyttä, asiakaspalvelua ja tarmokkuutta</li>
                 </ul>
 
             </div>
+            <div class="volunteer">
+
+                <h1>VAPAAEHTOISTYÖ</h1>
+                <ul>
+                    <li>Vertaistutor <span id="years">2023 - Kuluva</span></li>
+                    <LI><span id="grey">Tampereen ammattikorkeakoulu</span></li>
+                    <li> Esiintymistä ja johtamista</li>
+                </ul>
+            </div>
+            
             <div class="about_me">
 
                 <h1>MINUSTA</h1>
                 <p id="comment">// CV for job hunting</p>
-                <p><span id="muuttuja">CV</span> = Yhteistyökykyinen ison perheen kasvatti kävi kokeilemassa
-                    muutamaa persoonaansa sopivaa alaa ottamatta huomioon kaikkein
-                    tärkeintä.</p>
-                <p>Sosiaaliset taidot omaavana, loistavaksi asiakaspalvelijaksi hän muuttui.
-                    Asiakkaat piti ystävinä ja työkaverit ammattitaitajana. Siitä hänelle jäi
-                    energiat vähiin, työn ulkopuolisiin kanssakäymisiin.</p>
-                <p>Visuaalisuuden ja loogisuuden keskitaivaltajana vain puolikasta käytti hän
-                    opinnoissaan, myöhemmin työssään. Loogisuutta hän kaipaili, haasteita
-                    hän hamuili ja siitä hän ei enää luopuisi. Insinööriksi hän haki ja vuosien
-                    kokemusten takaa tiesi, tämä on se miltä tulevaisuutesi näyttäisi.
-                    Onnellisena hän haasteiden kanssa tappeli ja tiesi ettei tylsistyisi. Tätä hän
-                    janosi, jotta elämä hymyilisi. Nyt kaksi puolikasta hän voisi yhdistää
-                    tulevissa työtehtävissään, jättää tuhannet asiakaskohtaamiset yksittäisiin
-                    ja hyvässä jengissä nauttia ongelmanratkonnasta ja sen antamista
-                    haasteista.</p>
-                <p><span id="if-else">if</span> (<span id="muuttuja">CV</span> != bad) { <br>
-                    cout << <span id="text">"I'd like an interview with you to know more."</span>;<br>
-                    }<br>
-                    <span id="if-else">else</span> {<br>
-                    cout << <span id="text">"Good effort!"</span>;<br>
-                    }}</p> 
+                <p>Yhteistyökykyisenä ison perheen kasvattina olen aina ollut kiinnostunut
+                    monesta asiasta yhtä-aikaa ja ominut taitoja ja tietoa sieltä sun täältä.
+                    Merkittävimpänä muutoksena edellisiin kokemuksiin ja tämän hetkisiin
+                    opintoihin on se että pääsen Tietotekniikan Insinöörinä käyttämään loogista
+                    päättelykykyäni ja matemaattisuuttani enemmän kuin aikaisemmin.</p>
+                <p>Sosiaaliset taidot omaavana ammattitaitajana uurastin itseni loistavaksi
+                    asiakaspalvelijaksi. Projektityöhön ihastuneena nojasin myöhemmin
+                    taiteelliseen puoleen itsestäni ja päädyin tekemään Graafikon
+                    hommia useampia vuosia, kunnes löysin alan joka yhdistää kaiken
+                    personallisuudestani.</p>
+                <p>Tietotekniikan insinöörinä pääsen yhdistämään asiakaspalvelu taitojani,
+                    projektityö-osaamistani, visuaalista silmääni ja eritoten ennen unohdettuja
+                    pulmanratkomisen ja loogisuuden aivolohkoja.</p>
+                <p>Mottoni “Jos olet viisain ihminen huoneesta, olet vääräsää huoneessa.”
+                    kertoo hieman siitä miten kehittymisen ja uuden oppiminen on kaiverrettu
+                    minun ytimeeni. Teknologian nopea kehittyminen ja sen maailman
+                    valloittaminen on näin ollen kuin iso leikkikenttä isolle lapselle. Iäti haastava
+                    ja rajoja mittaava Insinöörin ura on huumeeni, se on minun tulevaisuuteni.</p> 
             </div>
         </section>
             
@@ -284,6 +296,8 @@
         <a href="https://www.linkedin.com/in/juho-tiainen-482796162/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
         <a href="https://www.instagram.com/jeihoo/"><i class="fa-brands fa-instagram fa-2x"></i></a>
         <a href="https://www.facebook.com/juho.tiainen.9"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+        <a href="https://github.com/Jeihoo"><i <i class="fa-brands fa-square-github fa-2x"></i></a>
+        
 
     </footer>
     
